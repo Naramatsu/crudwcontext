@@ -1,12 +1,16 @@
+import React from 'react'
+import Todo from './components/Todo/Todo';
+import AppState from './context/AppState'
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <h1>Learning session</h1>
-      <p>Andres was here.</p>
-      <p>JhonArroyo Was Here</p>
-      <p>Jonathan Was Here</p>
-    </div>
+    <AppState>
+      <div className="App">
+        <h1>Crud for Nandito</h1>
+        <Todo />
+      </div>
+    </AppState>
   );
 }
 
